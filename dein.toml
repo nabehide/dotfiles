@@ -1,0 +1,7 @@
+[[plugins]]
+repo = 'kakkyz81/evervim'
+hook_add = '''
+  py from os.path import expanduser
+  py sys.path.append(expanduser("~/anaconda3/envs/py2.7/lib/python2.7/site-packages"))
+  let g:evervim_devtoken = $EVERVIM_DEVTOKEN
+'''
