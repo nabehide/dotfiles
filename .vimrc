@@ -16,7 +16,7 @@ let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " set runtimepath+=expand('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-set runtimepath+=/Users/nabehide/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
