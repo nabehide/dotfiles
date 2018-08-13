@@ -9,13 +9,12 @@ set expandtab
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " python
-let $PYTHONPATH="/Users/nabehide/anaconda3/envs/py2.7/Python/bin"
-" let $PYTHONPATH="/Users/nabehide/anaconda3/envs/py2.7"
+let $PYTHONPATH="/anaconda3/envs/py2.7/Python/bin"
+python sys.path = ["/anaconda3/envs/py2.7/lib/python2.7/site-packages"] + sys.path
 
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-" set runtimepath+=expand('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state(s:dein_dir)
