@@ -5,3 +5,9 @@ hook_add = '''
   py sys.path.append(expanduser("~/anaconda3/envs/py2.7/lib/python2.7/site-packages"))
   let g:evervim_devtoken = $EVERVIM_DEVTOKEN
 '''
+
+[[plugins]]
+repo = 'AndrewRadev/switch.vim'
+hook_add = '''
+  let g:switch_mapping = "gs"
+'''
