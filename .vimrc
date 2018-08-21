@@ -12,6 +12,13 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 let $PYTHONPATH="/anaconda3/envs/py2.7/Python/bin"
 python sys.path = ["/anaconda3/envs/py2.7/lib/python2.7/site-packages"] + sys.path
 
+" indent
+autocmd!
+autocmd BufNewFile,BufRead *.js setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.json setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.ts setlocal tabstop=2 softtabstop=2 shiftwidth=2 filetype=typescript
+autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4
+
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
