@@ -44,3 +44,7 @@ on_ft = 'python'
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = 'typescript'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = 'vue'
