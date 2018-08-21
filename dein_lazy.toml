@@ -39,3 +39,8 @@ hook_add = '''
 [[plugins]]
 repo = 'tell-k/vim-autopep8'
 on_ft = 'python'
+
+# typescript
+[[plugins]]
+repo = 'clausreinke/typescript-tools'
+on_ft = 'typescript'
