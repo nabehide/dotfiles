@@ -42,5 +42,5 @@ on_ft = 'python'
 
 # typescript
 [[plugins]]
-repo = 'clausreinke/typescript-tools'
+repo = 'leafgarland/typescript-vim'
 on_ft = 'typescript'
